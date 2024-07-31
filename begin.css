@@ -1,0 +1,104 @@
+body{
+    background-image: url("https://gas-kvas.com/uploads/posts/2023-02/1675440574_gas-kvas-com-p-fonovii-risunok-pogoda-1.jpg");
+    width: 70%;
+    height: 70%;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.p{
+    text-align: start;
+    color:blueviolet
+}
+
+.container{
+    display: flex;
+    justify-content: flex-end;
+}
+input{
+    background-color: #6495ED;
+    color: black;
+    height: 30px;
+    width: 15%;
+    border: 1px solid #6495ED;
+    border-radius: 10px ;
+}
+button{
+    border: none;    
+    outline: none;
+    cursor: pointer;
+    background: none;
+
+}
+button:hover{
+    transform: scale(1.1);
+}
+img{
+    height: 35px;
+    width: 35px;
+}
+
+#root{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+}
+.weather-info{
+    width: 80%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+.sun{
+    display: none;
+}
+.cold{
+    display: none;
+}
+
+.second-div{
+    background-color: #fff;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/** Поставить каритнку рядом с текстом */
+.pressure,.pressure-image{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.pressure{
+    margin-right: 10px;
+}
+.pressure-image{
+    display: none;
+}
+
+.day,.humidity-image{
+    display: inline-block;
+    vertical-align: middle;
+}
+.day{
+    margin-right: 10px;
+}
+.humidity-image{
+    display: none;
+}
+
+.temp,.sun,.cold,.partly-cloud,.ligth-rain,.patchy-rain-night,.patchy-rain-day{
+    display: inline-block;
+    vertical-align: middle;
+}
+.sun,.cold,.partly-cloud,.ligth-rain,.patchy-rain-night,.patchy-rain-day{
+    display: none;
+}
